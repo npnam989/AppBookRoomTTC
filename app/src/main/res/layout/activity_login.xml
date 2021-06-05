@@ -21,23 +21,20 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
                     android:background="@color/mainColor"
-                    android:src="@drawable/ic_baseline_arrow_back_ios_24">
-                </ImageButton>
+                    android:src="@drawable/group_8158_backbtn"></ImageButton>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/beausanspro_bold"
                     android:text="@string/txt_header_login"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
 
             </RelativeLayout>
 
@@ -45,11 +42,9 @@
                 android:id="@+id/logo_ttc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/header"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="-50dp"
-                android:src="@drawable/logo_ttc_1">
-            </ImageView>
+                android:layout_marginTop="133dp"
+                android:src="@drawable/logo_ttc_1"></ImageView>
 
             <RelativeLayout
                 android:id="@+id/login"
@@ -61,18 +56,19 @@
                 <EditText
                     android:id="@+id/etEmail"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:background="@drawable/shape_btn_email_pass"
                     android:fontFamily="@font/ui_text_regular"
                     android:gravity="center_vertical"
                     android:hint="@string/hint_email"
-                    android:maxLines="1"
                     android:inputType="text"
-                    android:paddingLeft="15dp"
+                    android:maxLines="1"
+                    android:padding="12dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/orange"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textFontWeight="400"
                     android:textSize="14sp">
 
                 </EditText>
@@ -80,16 +76,17 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/layoutPass"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_below="@id/etEmail"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="12dp"
                     android:layout_marginRight="16dp"
                     android:background="@drawable/shape_btn_email_pass"
                     android:gravity="center_vertical"
                     app:hintAnimationEnabled="false"
                     app:hintEnabled="false"
+                    app:passwordToggleDrawable="@drawable/hint_password"
                     app:passwordToggleEnabled="true">
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -102,9 +99,10 @@
                         android:hint="@string/hint_pass"
                         android:inputType="textPassword"
                         android:maxLines="1"
-                        android:paddingLeft="16dp"
+                        android:paddingLeft="12dp"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/orange"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textFontWeight="400"
                         android:textSize="14sp">
 
                     </androidx.appcompat.widget.AppCompatEditText>
@@ -121,8 +119,7 @@
                     android:fontFamily="@font/beausanspro_semibold"
                     android:text="@string/quen_mat_khau"
                     android:textColor="@color/mainColor"
-                    android:textSize="14sp">
-                </TextView>
+                    android:textSize="14sp"></TextView>
 
                 <Button
                     android:id="@+id/btn_login"
@@ -132,15 +129,15 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="12dp"
                     android:layout_marginRight="16dp"
-                    android:height="50dp"
+                    android:height="40dp"
                     android:background="@drawable/shape_btn_login"
                     android:fontFamily="@font/ui_text_bold"
                     android:text="@string/dang_nhap"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="16dp"
-                    android:textStyle="bold">
-                </Button>
+                    android:textFontWeight="700"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></Button>
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>

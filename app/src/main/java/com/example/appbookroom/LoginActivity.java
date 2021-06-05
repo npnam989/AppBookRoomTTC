@@ -25,13 +25,10 @@ import com.example.appbookroom.databinding.DialogLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityLoginBinding.inflate( getLayoutInflater());
-        setContentView(binding.getRoot());
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_login);
 
         binding.btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
