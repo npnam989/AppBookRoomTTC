@@ -1,5 +1,6 @@
 package com.example.appbookroom;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -11,7 +12,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.appbookroom.databinding.ActivityLoginBinding;
 
@@ -27,13 +30,16 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("Check", "Nhận");
-                final Dialog dialog = new Dialog(LoginActivity.this);
-                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                dialog.setCancelable(true);
+                Dialog dialog = new Dialog(LoginActivity.this);
+
+                WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+                layoutParams.copyFrom(dialog.getWindow().getAttributes());
+
+                layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT;
+                layoutParams.height = WindowManager.LayoutParams.MATCH_PARENT;
                 dialog.setContentView(R.layout.dialog_login);
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 final Button btnCancel = dialog.findViewById(R.id.btnCancel);
+                final ImageButton imgCancel = dialog.findViewById(R.id.imgCancel);
 
                 btnCancel.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -41,6 +47,16 @@ public class LoginActivity extends AppCompatActivity {
                         dialog.dismiss();
                     }
                 });
+                imgCancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+                int width = (int) (getResources().getDisplayMetrics().widthPixels*0.92);
+                int height = (int) (getResources().getDisplayMetrics().heightPixels*0.35);
+                dialog.getWindow().setBackgroundDrawableResource(R.drawable.shape_dialog);
+                dialog.getWindow().setLayout(width, height);
                 dialog.show();
             }
         });

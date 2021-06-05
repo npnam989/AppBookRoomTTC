@@ -6,4 +6,6 @@
     <string name="quen_mat_khau">Quên mật khẩu ?</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="dang_nhap">Đăng Nhập</string>
+    <string name="loi_dang_nhap">Tài khoản không tồn tại</string>
+    <string name="cancel">Quay Lại</string>
 </resources>

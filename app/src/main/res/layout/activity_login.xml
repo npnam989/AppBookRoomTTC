@@ -25,7 +25,9 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@color/mainColor"
-                    android:src="@drawable/ic_baseline_arrow_back_ios_24"></ImageButton>
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24">
+
+                </ImageButton>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -35,7 +37,9 @@
                     android:text="@string/txt_header_login"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:fontFamily="@font/beausanspro_bold"
+                    android:textStyle="bold">
+                </TextView>
             </RelativeLayout>
 
             <ImageView
@@ -67,17 +71,21 @@
                     android:hint="@string/hint_email"
                     android:maxLines="1"
                     android:paddingLeft="15dp"
+                    android:fontFamily="@font/ui_text_regular"
                     android:textColor="@color/black"
                     android:textColorHint="@color/login"
-                    android:textSize="16sp"></EditText>
+                    android:textSize="14sp">
+
+                </EditText>
 
                 <com.google.android.material.textfield.TextInputLayout
+
                     android:id="@+id/layoutPass"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_below="@id/etEmail"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="12dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
 
                     android:layout_marginRight="16dp"
@@ -88,18 +96,21 @@
                     app:passwordToggleEnabled="true">
 
                     <androidx.appcompat.widget.AppCompatEditText
+                        android:fontFamily="@font/ui_text_regular"
                         android:id="@+id/etPassword"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
                         android:hint="@string/hint_pass"
-                        android:inputType="textPassword"
+                        android:inputType="textVisiblePassword|textPassword"
                         android:maxLines="1"
                         android:paddingLeft="16dp"
                         android:textColor="@color/black"
                         android:textColorHint="@color/login"
-                        android:textSize="16sp"></androidx.appcompat.widget.AppCompatEditText>
+                        android:textSize="14sp">
+
+                    </androidx.appcompat.widget.AppCompatEditText>
                 </com.google.android.material.textfield.TextInputLayout>
                 <TextView
                     android:id="@+id/btn_quenMatKhau"
@@ -111,9 +122,10 @@
                     android:layout_marginRight="16dp"
                     android:text="@string/quen_mat_khau"
                     android:textColor="@color/mainColor"
-                    android:textSize="16dp"></TextView>
+                    android:fontFamily="@font/beausanspro_semibold"
+                    android:textSize="14sp">
+                </TextView>
                 <Button
-
                     android:id="@+id/btn_login"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -127,8 +139,8 @@
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="16dp"
+                    android:fontFamily="@font/ui_text_bold"
                     android:textStyle="bold">
-
                 </Button>
             </RelativeLayout>
     </RelativeLayout>
