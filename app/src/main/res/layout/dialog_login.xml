@@ -31,7 +31,7 @@
         android:layout_margin="26dp"
         android:fontFamily="@font/pro_text"
         android:text="@string/loi_dang_nhap"
-        android:textColor="@color/black"
+        android:textColor="#44494D"
         android:textFontWeight="700"
         android:textSize="16dp"
         android:textStyle="normal"
