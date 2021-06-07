@@ -50,13 +50,12 @@ public class LoginActivity extends AppCompatActivity {
                         alertDialog.dismiss();
                     }
                 });
+
                 int width = (int) (getResources().getDisplayMetrics().widthPixels * 0.92);
                 int height = (int) (getResources().getDisplayMetrics().heightPixels * 0.35);
-
                 alertDialog.getWindow().setBackgroundDrawableResource(R.drawable.shape_dialog);
                 alertDialog.getWindow().setLayout(width, height);
                 alertDialog.show();
-
 
             }
         });
