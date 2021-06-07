@@ -22,6 +22,8 @@
     <style name="Theme.AppBookRoom.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.AppBookRoom.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
+    <style name="SplashscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splashscreen</item>
+    </style>
 </resources>
 
