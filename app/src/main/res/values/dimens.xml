@@ -6,4 +6,6 @@
     <dimen name="item_info_room_margin_horizontal">15dp</dimen>
     <dimen name="item_info_progess_room_margin_top">3dp</dimen>
     <dimen name="item_info_progess_room_margin_horizontal">13dp</dimen>
+    <dimen name="margin_bottombar_horizontal">73dp</dimen>
+    <dimen name="margin_bttombar_bottom">22dp</dimen>
 </resources>
