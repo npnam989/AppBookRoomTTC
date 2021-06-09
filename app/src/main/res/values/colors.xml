@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mainColor">#F5802A</color>
     <color name="login">#595757</color>
+    <color name="nav_unchecked">#E0E0E0</color>
 </resources>
